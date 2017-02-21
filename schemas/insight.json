@@ -1,0 +1,492 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "author": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "levels": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "column": {
+                "type": "integer"
+              },
+              "tip": {
+                "type": "string"
+              },
+              "length": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "value",
+              "line",
+              "column",
+              "tip",
+              "length"
+            ]
+          }
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "type": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "nature": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "url",
+                  "nature"
+                ]
+              },
+              "line": {
+                "type": "integer"
+              },
+              "column": {
+                "type": "integer"
+              },
+              "tip": {
+                "type": "string"
+              },
+              "length": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "value",
+              "line",
+              "column",
+              "tip",
+              "length"
+            ]
+          }
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "headline": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "gameContent": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "practiceQuestion": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "reviseQuestion": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "footnotes": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "notes": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "parent": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    },
+    "inAlgoPool": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "boolean"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "column": {
+          "type": "integer"
+        },
+        "tip": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "line",
+        "column",
+        "tip",
+        "length"
+      ]
+    }
+  },
+  "required": [
+    "author",
+    "levels",
+    "type",
+    "category",
+    "headline",
+    "content",
+    "parent"
+  ]
+}
